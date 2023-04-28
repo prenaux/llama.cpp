@@ -124,3 +124,10 @@ nppBackup
 /tests/test-tokenizer-1-bpe
 /tests/test-rope
 /tests/test-backend-ops
+
+# data/ is a symlink to models to work with ham-sync-resources
+# (at the top to avoid frequent rebase conflicts)
+data
+!models/_sync_data
+rclone.conf
+
